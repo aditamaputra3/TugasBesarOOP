@@ -5,7 +5,7 @@ public class MainDriver {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int loginValid = 0;
-		String username, password;
+		String username, password, user = "postfarrel", pass = "123";
 			
 		do {
 			System.out.println("========Login=========");
@@ -14,14 +14,14 @@ public class MainDriver {
 			System.out.println("Password: ");
 			password = sc.next();
 			
-			if(username != /*username di db*/ || password != /*password di db*/) {
+			if(username != user || password != pass) {
 				System.out.println("Username or password is not available");
 				loginValid = 0;
 			}else {
 				loginValid = 1;
 			}
-		}while(loginValid == 0)
+		}while(loginValid == 0);
 		
-		
+		sc.close();
 	}
 }
